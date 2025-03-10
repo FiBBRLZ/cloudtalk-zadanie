@@ -1,0 +1,548 @@
+@import '_variables';
+
+@font-face {
+    font-family: Silka;
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://nwlimgs.g-test.sk/ct/Silka/Silka-Regular.otf') format('opentype'),
+}
+@font-face {
+    font-family: Silka;
+    font-style: normal;
+    font-weight: 500;
+    src: url('https://nwlimgs.g-test.sk/ct/Silka/Silka-Medium.otf') format('opentype'),
+}
+@font-face {
+    font-family: Silka;
+    font-style: normal;
+    font-weight: 600;
+    src: url('https://nwlimgs.g-test.sk/ct/Silka/Silka-Bold.otf') format('opentype'),
+}
+@font-face {
+    font-family: 'GT Pressura';
+    font-style: normal;
+    font-weight: 700;
+    src: url('https://nwlimgs.g-test.sk/ct/GT-Pressura/GT-Pressura-Extended-Medium.otf') format('opentype'),
+}
+
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    &:focus-visible {
+        outline: 2px solid $Colors-text-brand-tertiary-600;
+    }
+}
+
+body {
+    font-family: $font-family-body;
+    margin: 0;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-family: $font-family-display;
+    font-weight: 700;
+    font-size: $font-size-heading-05;
+    line-height: $line-height-heading-05;
+    color: $colors-text-text-primary-900;
+    margin: 0;
+}
+
+main {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        min-height: 100vh;
+        padding: 0 $container-padding-mobile;
+    }
+}
+
+.btn-primary {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 14px;
+    border: 2px solid;
+    border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0) 100%);
+    background-color: $Colors-text-brand-tertiary-600;
+    color: #fff;
+    font-weight: 600;
+    font-family: $font-family-body;
+    font-size: $font-size-paragraph-03;
+    line-height: $line-height-paragraph-03;
+    cursor: pointer;
+    border-radius: $radius-md;
+    text-align: center;
+    transition: all .3s ease-in-out;
+    &:hover {
+        background-color: $Colors-button-primary-bg-hover;
+    }
+    &:focus, &:focus-visible {
+        outline: 2px solid $Colors-text-brand-tertiary-600;
+    }
+}
+
+.mobile-header {
+    display: none;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    padding: 27px 0;
+    border-bottom: 1px solid #E2E8F0;
+    background-color: #fff;
+    .logo {
+        margin: 0 auto;
+        display: block;
+        max-width: 160px;
+    }
+}
+
+.bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        background: linear-gradient(180deg,rgba(255,255,255,.6) -14.08%,#0527ff 101.63%);
+    }
+}
+
+.form-wrap {
+    position: relative;
+    box-shadow: 0px 3px 3px -1.5px $ColorsEffectsShadowsshadow-xl03, 0px 8px 8px -4px $ColorsEffectsShadowsshadow-xl02, 0px 20px 24px -4px $ColorsEffectsShadowsshadow-xl01;
+    padding: $container-padding-mobile;
+    background: #FFFFFF;
+    border-radius: $radius-2xl;
+    width: 100%;
+    max-width: 478px;
+    h1 {
+        text-align: center;
+    }
+}
+
+.form-header {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-md;
+}
+
+.animation {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    video {
+        position: absolute;
+        right: 16px;
+        top: -76px;
+        width: 86px;
+        height: 86px;
+        border-radius: 50%;
+        display: block;
+        border: 4px solid #fff;
+        box-shadow: 5.38px 0.67px 2.02px 0px #0000000D;
+        background-color: #fff;
+    }
+    .tooltip {
+        display: block;
+        background: $Colors-bg-primary-solid;
+        border-radius: $radius-md;
+        padding: $spacing-md $spacing-lg;
+        color: #fff;
+        font-size: $font-size-footer;
+        line-height: $line-height-footer;
+        position: absolute;
+        max-width: 140px;
+        right: 96px;
+        top: -67px;
+        box-shadow: 0px 2px 2px -1px $ColorsEffectsShadowsshadow-lg03, 0px 4px 6px -2px $ColorsEffectsShadowsshadow-lg02, 0px 12px 16px -4px $ColorsEffectsShadowsshadow-lg01;
+        &::after {
+            content: '';
+            width: 12px;
+            height: 12px;
+            display: block;
+            background-color: $Colors-bg-primary-solid;
+            position: absolute;
+            right: -5px;
+            top: 50%;
+            transform: translateY(-50%) rotate(45deg);
+            z-index: 0;
+            border-radius: 1px;
+        }
+    }
+}
+
+.benefits {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $spacing-lg;
+    li {
+        font-weight: 500;
+        font-size: $font-size-paragraph-03;
+        line-height: $line-height-paragraph-03;
+        color: $colors-text-text-secondary-700;
+        &::before {
+            content: '';
+            display: inline-block;
+            margin-right: 3px;
+            background: url(https://github.com/FiBBRLZ/assets/raw/refs/heads/main/check.svg) no-repeat center;
+            background-size: 100%;
+            width: 18px;
+            height: 18px;
+            vertical-align: middle;
+        }
+    }
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="password"], 
+.selected-value {
+    background-color: #FFFFFF;
+    border: 1px solid $border-primary;
+    border-radius: $radius-md;
+    box-shadow: 0px 1px 2px 0px $ColorsEffectsShadowsshadow-xs;
+    font-size: $font-size-paragraph-02;
+    line-height: $line-height-paragraph-02;
+    color: $colors-text-placeholder;
+    font-weight: 400;
+    font-family: $font-family-body;
+    padding: $spacing-md $spacing-lg;
+    width: 100%;
+    &::placeholder {
+        color: inherit;
+        font-family: inherit;
+    }
+    &:focus, &:active, &:focus-visible {
+        outline: 2px solid $Colors-text-brand-tertiary-600;
+    }
+}
+
+.input-error {
+    color: $colors-text-error-primary-600;
+    font-size: $font-size-caption;
+    line-height: $line-height-caption;
+    margin: 0;
+    opacity: 0;
+    height: 0;
+    transition: opacity .3s ease-in-out, height .3s ease-in-out;
+    pointer-events: none;
+}
+
+input[type='password'] + .input-error {
+    opacity: 1;
+    height: 100%;
+    pointer-events: all;
+    margin-block: 3px;
+    color: $colors-text-tertiary-600;
+}
+
+//to disable error state on first load only show error state when placeholder is not shown
+input:invalid:not(:placeholder-shown) {
+    border: 2px solid $colors-text-error-primary-600;
+    background: url(https://github.com/FiBBRLZ/assets/raw/refs/heads/main/exclamation.svg) no-repeat;
+    background-position-x: calc(100% - $spacing-lg);
+    background-position-y: center;
+    padding-right: calc(16px + $spacing-lg);
+}
+
+input:invalid:not(:placeholder-shown) + .input-error {
+    color: $colors-text-error-primary-600;
+    opacity: 1;
+    height: 100%;
+    pointer-events: all;
+    margin-block: 3px;
+}
+
+.form-row {
+    display: flex;
+    gap: $spacing-lg;
+    margin: $spacing-md 0;
+    padding: 0;
+    border: 0;
+    .form-el {
+        width: 100%;
+    }
+}
+
+.form-row.pass {
+    flex-direction: column;
+    gap: 0;
+}
+
+.styled-dropdown {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    .selected-value {
+        text-align: left;
+        position: relative;        
+        &::after {
+            content: "";
+            display: inline-block;
+            margin-right: 3px;
+            background: url('https://github.com/FiBBRLZ/assets/raw/refs/heads/main/angle.svg') no-repeat center;
+            background-size: 100%;
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            right: $spacing-md;
+            top: 11px;
+            transition: transform .3s ease-in-out;
+        }
+    }
+    ul {
+        opacity: 0;
+        pointer-events: none;
+        position: absolute;
+        top: 46px;
+        left: 0;
+        border: 1px solid $border-secondary;
+        border-radius: $radius-md;
+        background-color: #fff;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        width: 100%;
+        box-shadow: 0px 2px 2px -1px $ColorsEffectsShadowsshadow-lg03, 0px 4px 6px -2px $ColorsEffectsShadowsshadow-lg02, 0px 12px 16px -4px $ColorsEffectsShadowsshadow-lg01;
+        transition: opacity .3s ease-in-out;
+        z-index: 1;
+        &:focus, &:focus-visible {
+            outline: 2px solid $Colors-text-brand-tertiary-600;
+        }
+        li {
+            padding: $spacing-md;
+            font-family: $font-family-body;
+            font-weight: 500;
+            font-size: $font-size-paragraph-02;
+            line-height: $line-height-paragraph-02;
+            color: $colors-text-text-primary-900;
+            cursor: pointer;
+            transition: background-color .3s ease-in-out;
+            position: relative;
+            &::after {
+                content: "";
+                display: inline-block;
+                margin-right: 3px;
+                filter: invert(16%) sepia(80%) saturate(4763%) hue-rotate(236deg) brightness(77%) contrast(123%);
+                background: url('https://github.com/FiBBRLZ/assets/raw/refs/heads/main/check.svg') no-repeat center;
+                background-size: 100%;
+                width: 18px;
+                height: 18px;
+                position: absolute;
+                right: $spacing-md;
+                top: 11px;
+                opacity: 0;
+            }
+            &:hover {
+                background-color: $background-bg-active;
+            }
+            &:focus-visible {
+                outline: 2px solid $Colors-text-brand-tertiary-600;
+            }
+        }
+        li.selected {
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.styled-dropdown.show {
+    .selected-value {
+        &::after {
+            transform: rotate(180deg);
+        }
+    }
+    ul {
+        opacity: 1;
+        pointer-events: all;
+    }
+}
+
+//hide input with value of number of users visually
+#num-users-value {
+    height: 0;
+    padding: 0;
+    box-shadow: none;
+    border: none;
+    opacity: 0;
+    display: block;
+}
+
+#country-code-el {
+    max-width: 102px;
+    .selected-value, #country-code li {
+        padding-left: calc($spacing-lg + 25px);
+        &::before {
+            content: "";
+            display: inline-block;
+            margin-right: 3px;
+            background: url('https://github.com/FiBBRLZ/assets/raw/refs/heads/main/US.svg') no-repeat center;
+            background-size: 100%;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            left: $spacing-md;
+            top: 10px;
+        }
+    }
+    #country-code {
+        max-height: 180px;
+        overflow-y: scroll;
+        // styling for each country 
+        // image map could be used and change just the background position
+        // li.DZ {
+        //     &::before {
+        //         background: url('customURL') no-repeat center;
+        //     }
+        // }
+    }
+}
+
+.checkbox-container {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    input {
+        width: 1px;
+        height: 1px;
+        accent-color: $Colors-text-brand-tertiary-600;
+        margin: 0;
+        opacity: 0;
+        position: absolute;
+        left: 0;
+    }
+    .checkicon {
+        width: 16px;
+        height: 18px;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        pointer-events: none;
+        background: url('https://github.com/FiBBRLZ/assets/raw/refs/heads/main/checkbox_base.svg') no-repeat center;
+        &:focus-visible {
+            outline: 2px solid $Colors-text-brand-tertiary-600;
+        }
+    }
+    input:checked + .checkicon {
+        filter: brightness(0) saturate(100%) invert(16%) sepia(80%) saturate(4763%) hue-rotate(236deg) brightness(77%) contrast(123%);
+        &::after {
+            content: "";
+            display: inline-block;
+            filter: invert(16%) sepia(80%) saturate(4763%) hue-rotate(236deg) brightness(77%) contrast(123%);
+            background: url('https://github.com/FiBBRLZ/assets/raw/refs/heads/main/check.svg') no-repeat center;
+            background-size: 100%;
+            width: 16px;
+            height: 18px;
+            position: absolute;
+            left: 0;
+        }
+    }
+    label {
+        font-family: $font-family-body;
+        font-weight: 500;
+        font-size: $font-size-paragraph-03;
+        line-height: $line-height-paragraph-03;
+        color: $colors-text-text-secondary-700;
+        padding-left: calc($spacing-md + 16px);
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .mobile-header {
+        display: block;
+    }
+    .bg {
+        img {
+            display: none;
+        }
+        &::after {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 23.65%, #0527FF 101.63%);
+        }
+    }
+    main {
+        .content {
+            align-items: flex-start;
+        }
+    }
+    .form-wrap {
+        box-shadow: none;
+        background: none;
+        padding: $spacing-3xl 0 0;
+    }
+    .form-container {
+        box-shadow: 0px 3px 3px -1.5px $ColorsEffectsShadowsshadow-xl03, 0px 8px 8px -4px $ColorsEffectsShadowsshadow-xl02, 0px 20px 24px -4px $ColorsEffectsShadowsshadow-xl01;
+        padding: $container-padding-mobile;
+        background: #FFFFFF;
+        border-radius: $radius-2xl;
+    }
+    .animation {
+        order: 2;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row-reverse;
+        margin: 0 auto -15px;
+        video {
+            position: relative;
+            top: unset;
+            right: unset;
+        }
+        .tooltip {
+            position: relative;
+            top: unset;
+            right: unset;
+            max-width: 177px;
+        }
+    }
+    .benefits {
+        flex-wrap: wrap;
+        li {
+            font-size: $font-size-caption;
+            line-height: $line-height-caption;
+            &::before {
+                width: 14px;
+                height: 14px;
+                vertical-align: text-top;
+            }
+        }
+    }
+    .form-row:not(.form-row.tel) {
+        flex-direction: column;
+        gap: 8px;
+    }
+}

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Cloudtalk</title>
+</head>
+<body>
+    <main>
+        <header class="mobile-header">
+            <a class="logo" href="https://www.cloudtalk.io/"><img src="https://github.com/FiBBRLZ/assets/raw/refs/heads/main/cloudtalk_logo.svg" alt="cloudtalk logo" decoding="auto" fetchpriority="high" width="160" height="19"></a>
+        </header>
+        <div class="bg">
+          <img loading="lazy" src="https://github.com/FiBBRLZ/assets/raw/refs/heads/main/product_bg.webp" alt="cloudtalk product dashboard" width="1768" height="920" decoding="auto" fetchpriority="high">
+        </div>
+          <div class="content">
+              <div class="form-wrap">
+                  <header class="form-header">
+                      <div class="animation">
+                          <video autoplay loop muted playsinline width="86" height="86" poster="https://github.com/FiBBRLZ/assets/raw/refs/heads/main/poster-bg.webp">
+                            <source src="https://github.com/FiBBRLZ/assets/raw/refs/heads/main/form-animation.webm" type="video/webm" />
+                            <source src="https://github.com/FiBBRLZ/assets/raw/refs/heads/main/form-animation.mp4" type="video/mp4" />
+                          </video>
+                          <span class="tooltip">
+                            <b>Hello!</b> Fill out the form; it only takes a minute.
+                          </span>
+                      </div>
+                      <h1>👋 14-Day Free Trial</h1>
+                      <ul class="benefits">
+                          <li>1 Number</li>
+                          <li>$5 Credit</li>
+                          <li>No credit card required</li>
+                      </ul>
+                  </header>
+                  <div class="form-container">
+                    <form action="#" method="POST">
+                        <fieldset class="form-row">
+                            <div class="form-el">
+                                <label for="first-name" hidden>Name</label>
+                                <input placeholder="Name *" type="text" id="first-name" name="first_name" required aria-required="true" autocomplete="given-name">
+                                <p class="input-error">This is an error message.</p>
+                            </div>
+                            <div class="form-el">
+                                <label for="surname" hidden>Surname</label>
+                                <input placeholder="Surname *" type="text" id="surname" name="surname" required aria-required="true" autocomplete="family-name">
+                                <p class="input-error">This is an error message.</p>
+                            </div>
+                        </fieldset>
+                
+                        <fieldset class="form-row">
+                            <div class="form-el">
+                                <label for="company-email" hidden>Company e-mail</label>
+                                <input placeholder="Company e-mail *" type="email" id="company-email" name="company_email" required aria-required="true" autocomplete="email">
+                                <p class="input-error">This is an error message.</p>
+                            </div>
+                            <label for="num-users-value" hidden>Number of users</label>
+                            <div id="num-users" class="styled-dropdown">
+                                <div tabindex="0" class="selected-value">Number of users</div>
+                                <ul id="num-users-list">
+                                    <li value="1-10">1-10</li>
+                                    <li value="11-50">11-50</li>
+                                    <li value="51-100">51-100</li>
+                                    <li value="100+">100+</li>
+                                </ul>
+                                <input type="text" value="" id="num-users-value" name="num-users-value"> 
+                            </div>
+                        </fieldset>
+                
+                        <fieldset class="form-row pass">
+                            <label for="password" hidden>Password *</label>
+                            <input placeholder="Password *" type="password" id="password" name="password" required aria-required="true"
+                                   pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}"
+                                   title="Password must contain 1 small letter, 1 capital letter, 1 number, one number, and be at least 8 characters long.">
+                            <p class="input-error">Password must contain 1 small letter, 1 capital letter, 1 number, and be at least 8 characters long.</p>
+                        </fieldset>
+                
+                        <fieldset class="form-row tel">
+                            <div id="country-code-el" class="styled-dropdown">
+                                <div tabindex="0" class="selected-value">US</div>
+                                <ul name="country-code" id="country-code">
+                                    <li data-countrycode="DZ" value="213" class="DZ">DZ</li>
+                                    <li data-countrycode="AD" value="376" class="AD">AD</li>
+                                    <li data-countrycode="AO" value="244" class="AO">AO</li>
+                                    <li data-countrycode="AI" value="1264" class="AI">AI</li>
+                                    <li data-countrycode="AG" value="1268" class="AG">AG</li>
+                                    <li data-countrycode="AR" value="54" class="AR">AR</li>
+                                    <li data-countrycode="AM" value="374" class="AM">AM</li>
+                                    <li data-countrycode="AW" value="297" class="AW">AW</li>
+                                    <li data-countrycode="AU" value="61" class="AU">AU</li>
+                                    <li data-countrycode="AT" value="43" class="AT">AT</li>
+                                    <li data-countrycode="AZ" value="994" class="AZ">AZ</li>
+                                    <li data-countrycode="BS" value="1242" class="BS">BS</li>
+                                    <li data-countrycode="BH" value="973" class="BH">BH</li>
+                                    <li data-countrycode="BD" value="880" class="BD">BD</li>
+                                    <li data-countrycode="BB" value="1246" class="BB">BB</li>
+                                    <li data-countrycode="BY" value="375" class="BY">BY</li>
+                                    <li data-countrycode="BE" value="32" class="BE">BE</li>
+                                    <li data-countrycode="BZ" value="501" class="BZ">BZ</li>
+                                    <li data-countrycode="BJ" value="229" class="BJ">BJ</li>
+                                    <li data-countrycode="BM" value="1441" class="BM">BM</li>
+                                    <li data-countrycode="BT" value="975" class="BT">BT</li>
+                                    <li data-countrycode="BO" value="591" class="BO">BO</li>
+                                    <li data-countrycode="BA" value="387" class="BA">BA</li>
+                                    <li data-countrycode="BW" value="267" class="BW">BW</li>
+                                    <li data-countrycode="BR" value="55" class="BR">BR</li>
+                                    <li data-countrycode="BN" value="673" class="BN">BN</li>
+                                    <li data-countrycode="BG" value="359" class="BG">BG</li>
+                                    <li data-countrycode="BF" value="226" class="BF">BF</li>
+                                    <li data-countrycode="BI" value="257" class="BI">BI</li>
+                                    <li data-countrycode="KH" value="855" class="KH">KH</li>
+                                    <li data-countrycode="CM" value="237" class="CM">CM</li>
+                                    <li data-countrycode="CA" value="1" class="CA">CA</li>
+                                    <li data-countrycode="CV" value="238" class="CV">CV</li>
+                                    <li data-countrycode="KY" value="1345" class="KY">KY</li>
+                                    <li data-countrycode="CF" value="236" class="CF">CF</li>
+                                    <li data-countrycode="CL" value="56" class="CL">CL</li>
+                                    <li data-countrycode="CN" value="86" class="CN">CN</li>
+                                    <li data-countrycode="CO" value="57" class="CO">CO</li>
+                                    <li data-countrycode="KM" value="269" class="KM">KM</li>
+                                    <li data-countrycode="CG" value="242" class="CG">CG</li>
+                                    <li data-countrycode="CK" value="682" class="CK">CK</li>
+                                    <li data-countrycode="CR" value="506" class="CR">CR</li>
+                                    <li data-countrycode="HR" value="385" class="HR">HR</li>
+                                    <li data-countrycode="CU" value="53" class="CU">CU</li>
+                                    <li data-countrycode="CY" value="90392" class="CY">CY</li>
+                                    <li data-countrycode="CY" value="357" class="CY">CY</li>
+                                    <li data-countrycode="CZ" value="42" class="CZ">CZ</li>
+                                    <li data-countrycode="DK" value="45" class="DK">DK</li>
+                                    <li data-countrycode="DJ" value="253" class="DJ">DJ</li>
+                                    <li data-countrycode="DM" value="1809" class="DM">DM</li>
+                                    <li data-countrycode="DO" value="1809" class="DO">DO</li>
+                                    <li data-countrycode="EC" value="593" class="EC">EC</li>
+                                    <li data-countrycode="EG" value="20" class="EG">EG</li>
+                                    <li data-countrycode="SV" value="503" class="SV">SV</li>
+                                    <li data-countrycode="GQ" value="240" class="GQ">GQ</li>
+                                    <li data-countrycode="ER" value="291" class="ER">ER</li>
+                                    <li data-countrycode="EE" value="372" class="EE">EE</li>
+                                    <li data-countrycode="ET" value="251" class="ET">ET</li>
+                                    <li data-countrycode="FK" value="500" class="FK">FK</li>
+                                    <li data-countrycode="FO" value="298" class="FO">FO</li>
+                                    <li data-countrycode="FJ" value="679" class="FJ">FJ</li>
+                                    <li data-countrycode="FI" value="358" class="FI">FI</li>
+                                    <li data-countrycode="FR" value="33" class="FR">FR</li>
+                                    <li data-countrycode="GF" value="594" class="GF">GF</li>
+                                    <li data-countrycode="PF" value="689" class="PF">PF</li>
+                                    <li data-countrycode="GA" value="241" class="GA">GA</li>
+                                    <li data-countrycode="GM" value="220" class="GM">GM</li>
+                                    <li data-countrycode="GE" value="7880" class="GE">GE</li>
+                                    <li data-countrycode="DE" value="49" class="DE">DE</li>
+                                    <li data-countrycode="GH" value="233" class="GH">GH</li>
+                                    <li data-countrycode="GI" value="350" class="GI">GI</li>
+                                    <li data-countrycode="GR" value="30" class="GR">GR</li>
+                                    <li data-countrycode="GL" value="299" class="GL">GL</li>
+                                    <li data-countrycode="GD" value="1473" class="GD">GD</li>
+                                    <li data-countrycode="GP" value="590" class="GP">GP</li>
+                                    <li data-countrycode="GU" value="671" class="GU">GU</li>
+                                    <li data-countrycode="GT" value="502" class="GT">GT</li>
+                                    <li data-countrycode="GN" value="224" class="GN">GN</li>
+                                    <li data-countrycode="GW" value="245" class="GW">GW</li>
+                                    <li data-countrycode="GY" value="592" class="GY">GY</li>
+                                    <li data-countrycode="HT" value="509" class="HT">HT</li>
+                                    <li data-countrycode="HN" value="504" class="HN">HN</li>
+                                    <li data-countrycode="HK" value="852" class="HK">HK</li>
+                                    <li data-countrycode="HU" value="36" class="HU">HU</li>
+                                    <li data-countrycode="IS" value="354" class="IS">IS</li>
+                                    <li data-countrycode="IN" value="91" class="IN">IN</li>
+                                    <li data-countrycode="ID" value="62" class="ID">ID</li>
+                                    <li data-countrycode="IR" value="98" class="IR">IR</li>
+                                    <li data-countrycode="IQ" value="964" class="IQ">IQ</li>
+                                    <li data-countrycode="IE" value="353" class="IE">IE</li>
+                                    <li data-countrycode="IL" value="972" class="IL">IL</li>
+                                    <li data-countrycode="IT" value="39" class="IT">IT</li>
+                                    <li data-countrycode="JM" value="1876" class="JM">JM</li>
+                                    <li data-countrycode="JP" value="81" class="JP">JP</li>
+                                    <li data-countrycode="JO" value="962" class="JO">JO</li>
+                                    <li data-countrycode="KZ" value="7" class="KZ">KZ</li>
+                                    <li data-countrycode="KE" value="254" class="KE">KE</li>
+                                    <li data-countrycode="KI" value="686" class="KI">KI</li>
+                                    <li data-countrycode="KP" value="850" class="KP">KP</li>
+                                    <li data-countrycode="KR" value="82" class="KR">KR</li>
+                                    <li data-countrycode="KW" value="965" class="KW">KW</li>
+                                    <li data-countrycode="KG" value="996" class="KG">KG</li>
+                                    <li data-countrycode="LA" value="856" class="LA">LA</li>
+                                    <li data-countrycode="LV" value="371" class="LV">LV</li>
+                                    <li data-countrycode="LB" value="961" class="LB">LB</li>
+                                    <li data-countrycode="LS" value="266" class="LS">LS</li>
+                                    <li data-countrycode="LR" value="231" class="LR">LR</li>
+                                    <li data-countrycode="LY" value="218" class="LY">LY</li>
+                                    <li data-countrycode="LI" value="417" class="LI">LI</li>
+                                    <li data-countrycode="LT" value="370" class="LT">LT</li>
+                                    <li data-countrycode="LU" value="352" class="LU">LU</li>
+                                    <li data-countrycode="MO" value="853" class="MO">MO</li>
+                                    <li data-countrycode="MK" value="389" class="MK">MK</li>
+                                    <li data-countrycode="MG" value="261" class="MG">MG</li>
+                                    <li data-countrycode="MW" value="265" class="MW">MW</li>
+                                    <li data-countrycode="MY" value="60" class="MY">MY</li>
+                                    <li data-countrycode="MV" value="960" class="MV">MV</li>
+                                    <li data-countrycode="ML" value="223" class="ML">ML</li>
+                                    <li data-countrycode="MT" value="356" class="MT">MT</li>
+                                    <li data-countrycode="MH" value="692" class="MH">MH</li>
+                                    <li data-countrycode="MQ" value="596" class="MQ">MQ</li>
+                                    <li data-countrycode="MR" value="222" class="MR">MR</li>
+                                    <li data-countrycode="YT" value="269" class="YT">YT</li>
+                                    <li data-countrycode="MX" value="52" class="MX">MX</li>
+                                    <li data-countrycode="FM" value="691" class="FM">FM</li>
+                                    <li data-countrycode="MD" value="373" class="MD">MD</li>
+                                    <li data-countrycode="MC" value="377" class="MC">MC</li>
+                                    <li data-countrycode="MN" value="976" class="MN">MN</li>
+                                    <li data-countrycode="MS" value="1664" class="MS">MS</li>
+                                    <li data-countrycode="MA" value="212" class="MA">MA</li>
+                                    <li data-countrycode="MZ" value="258" class="MZ">MZ</li>
+                                    <li data-countrycode="MN" value="95" class="MN">MN</li>
+                                    <li data-countrycode="NA" value="264" class="NA">NA</li>
+                                    <li data-countrycode="NR" value="674" class="NR">NR</li>
+                                    <li data-countrycode="NP" value="977" class="NP">NP</li>
+                                    <li data-countrycode="NL" value="31" class="NL">NL</li>
+                                    <li data-countrycode="NC" value="687" class="NC">NC</li>
+                                    <li data-countrycode="NZ" value="64" class="NZ">NZ</li>
+                                    <li data-countrycode="NI" value="505" class="NI">NI</li>
+                                    <li data-countrycode="NE" value="227" class="NE">NE</li>
+                                    <li data-countrycode="NG" value="234" class="NG">NG</li>
+                                    <li data-countrycode="NU" value="683" class="NU">NU</li>
+                                    <li data-countrycode="NF" value="672" class="NF">NF</li>
+                                    <li data-countrycode="NP" value="670" class="NP">NP</li>
+                                    <li data-countrycode="NO" value="47" class="NO">NO</li>
+                                    <li data-countrycode="OM" value="968" class="OM">OM</li>
+                                    <li data-countrycode="PW" value="680" class="PW">PW</li>
+                                    <li data-countrycode="PA" value="507" class="PA">PA</li>
+                                    <li data-countrycode="PG" value="675" class="PG">PG</li>
+                                    <li data-countrycode="PY" value="595" class="PY">PY</li>
+                                    <li data-countrycode="PE" value="51" class="PE">PE</li>
+                                    <li data-countrycode="PH" value="63" class="PH">PH</li>
+                                    <li data-countrycode="PL" value="48" class="PL">PL</li>
+                                    <li data-countrycode="PT" value="351" class="PT">PT</li>
+                                    <li data-countrycode="PR" value="1787" class="PR">PR</li>
+                                    <li data-countrycode="QA" value="974" class="QA">QA</li>
+                                    <li data-countrycode="RE" value="262" class="RE">RE</li>
+                                    <li data-countrycode="RO" value="40" class="RO">RO</li>
+                                    <li data-countrycode="RU" value="7" class="RU">RU</li>
+                                    <li data-countrycode="RW" value="250" class="RW">RW</li>
+                                    <li data-countrycode="SM" value="378" class="SM">SM</li>
+                                    <li data-countrycode="ST" value="239" class="ST">ST</li>
+                                    <li data-countrycode="SA" value="966" class="SA">SA</li>
+                                    <li data-countrycode="SN" value="221" class="SN">SN</li>
+                                    <li data-countrycode="CS" value="381" class="CS">CS</li>
+                                    <li data-countrycode="SC" value="248" class="SC">SC</li>
+                                    <li data-countrycode="SL" value="232" class="SL">SL</li>
+                                    <li data-countrycode="SG" value="65" class="SG">SG</li>
+                                    <li data-countrycode="SK" value="421" class="SK">SK</li>
+                                    <li data-countrycode="SI" value="386" class="SI">SI</li>
+                                    <li data-countrycode="SB" value="677" class="SB">SB</li>
+                                    <li data-countrycode="SO" value="252" class="SO">SO</li>
+                                    <li data-countrycode="ZA" value="27" class="ZA">ZA</li>
+                                    <li data-countrycode="ES" value="34" class="ES">ES</li>
+                                    <li data-countrycode="LK" value="94" class="LK">LK</li>
+                                    <li data-countrycode="SH" value="290" class="SH">SH</li>
+                                    <li data-countrycode="KN" value="1869" class="KN">KN</li>
+                                    <li data-countrycode="SC" value="1758" class="SC">SC</li>
+                                    <li data-countrycode="SD" value="249" class="SD">SD</li>
+                                    <li data-countrycode="SR" value="597" class="SR">SR</li>
+                                    <li data-countrycode="SZ" value="268" class="SZ">SZ</li>
+                                    <li data-countrycode="SE" value="46" class="SE">SE</li>
+                                    <li data-countrycode="CH" value="41" class="CH">CH</li>
+                                    <li data-countrycode="SI" value="963" class="SI">SI</li>
+                                    <li data-countrycode="TW" value="886" class="TW">TW</li>
+                                    <li data-countrycode="TJ" value="7" class="TJ">TJ</li>
+                                    <li data-countrycode="TH" value="66" class="TH">TH</li>
+                                    <li data-countrycode="TG" value="228" class="TG">TG</li>
+                                    <li data-countrycode="TO" value="676" class="TO">TO</li>
+                                    <li data-countrycode="TT" value="1868" class="TT">TT</li>
+                                    <li data-countrycode="TN" value="216" class="TN">TN</li>
+                                    <li data-countrycode="TR" value="90" class="TR">TR</li>
+                                    <li data-countrycode="TM" value="7" class="TM">TM</li>
+                                    <li data-countrycode="TM" value="993" class="TM">TM</li>
+                                    <li data-countrycode="TC" value="1649" class="TC">TC</li>
+                                    <li data-countrycode="TV" value="688" class="TV">TV</li>
+                                    <li data-countrycode="UG" value="256" class="UG">UG</li>
+                                    <li data-countrycode="GB" value="44" class="GB">GB</li>
+                                    <li data-countrycode="UA" value="380" class="UA">UA</li>
+                                    <li data-countrycode="AE" value="971" class="AE">AE</li>
+                                    <li data-countrycode="UY" value="598" class="UY">UY</li>
+                                    <li selected data-countrycode="US" value="1" class="US">US</li>
+                                    <li data-countrycode="UZ" value="7" class="UZ">UZ</li>
+                                    <li data-countrycode="VU" value="678" class="VU">VU</li>
+                                    <li data-countrycode="VA" value="379" class="VA">VA</li>
+                                    <li data-countrycode="VE" value="58" class="VE">VE</li>
+                                    <li data-countrycode="VN" value="84" class="VN">VN</li>
+                                    <li data-countrycode="VG" value="84" class="VG">VG</li>
+                                    <li data-countrycode="VI" value="84" class="VI">VI</li>
+                                    <li data-countrycode="WF" value="681" class="WF">WF</li>
+                                    <li data-countrycode="YE" value="969" class="YE">YE</li>
+                                    <li data-countrycode="YE" value="967" class="YE">YE</li>
+                                    <li data-countrycode="ZM" value="260" class="ZM">ZM</li>
+                                    <li data-countrycode="ZW" value="263" class="ZW">ZW</li>
+                                </ul>
+                            </div>
+                            <div class="form-el">
+                                <label for="phone" hidden>Phone number</label>
+                                <input placeholder="Phone number" type="text" id="phone" name="phone" autocomplete="tel" required aria-required="true">
+                                <p class="input-error">This is an error message.</p>
+                            </div>
+                        </fieldset>
+                
+                        <fieldset class="checkbox-container form-row">
+                            <input tabindex="-1" type="checkbox" id="terms" name="terms" required aria-required="true">
+                            <span tabindex="0" class="checkicon"></span>
+                            <label for="terms">I have read and agree to the <a href="#" class="terms-link" target="_blank">Terms and Conditions</a> *</label>
+                        </fieldset>
+                
+                        <button type="submit" class="btn-primary">Start Your Free Trial</button>
+                    </form>
+                </div>
+              </div>
+          </div>
+      </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <script src="/assets/js/app.js"></script>
+</body>
+</html>
