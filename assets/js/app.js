@@ -60,7 +60,7 @@ const functionHandler = {
             if (e.key === 'Enter' || e.key === ' ') {
                 e.preventDefault();
                 //toggle checkbox checked attribute
-                $("#terms").attr('checked', !$("#terms").attr('checked'));  
+                $("#terms").prop('checked', !$("#terms").prop('checked'));  
             }
         });
     }
